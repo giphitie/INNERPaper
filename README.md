@@ -14,3 +14,5 @@ In the INNER model, we  utilize DNN to construct individualized coefficients in 
 $ python SummaryModel.py
 ```
 <img align="middle" src="https://github.com/YumingSun/INNER/blob/master/utilities/ArchitecutreOfINNER.png">
+
+## License
