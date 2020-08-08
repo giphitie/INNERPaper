@@ -16,3 +16,4 @@ $ python SummaryModel.py
 <img align="middle" src="https://github.com/YumingSun/INNER/blob/master/utilities/ArchitecutreOfINNER.png">
 
 ## License
+This project is covered under MIT license
