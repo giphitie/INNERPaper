@@ -51,7 +51,7 @@ def INNER(training, testing):
     LRmodel.compile(optimizer='sgd',
                   loss=tf.keras.losses.BinaryCrossentropy(),
                   metrics=['accuracy'])
-    history = LRmodel.fit([X_trainX,X_trainZ], Y_train,epochs=150,
+    history = LRmodel.fit([X_trainX,X_trainZ], Y_train,epochs=100,
                 batch_size = 64,verbose=0)
     
     _, acc_lr = LRmodel.evaluate([X_testX,X_testZ], Y_test,verbose=0)
