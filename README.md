@@ -9,11 +9,13 @@ This project aims to understand the risk of preoperative opioid. A novel Interpr
 The project has been tested on Python 3.7.4 with ```Tensorflow == 2.0.0```, ```Scikit-learn == 0.20.2``` and ```Numpy == 1.17.4```.
 
 ## INNER Model
+<img align="middle" src="https://github.com/YumingSun/INNER/blob/master/utilities/ArchitecutreOfINNER.png">
+
 In the INNER model, we  utilize DNN to construct individualized coefficients in a logistic regression model, wherein  the regression coefficients are functions of individual characteristics. They lead to two metrics, Baseline Opioid Tendency (BOT) and Pain-induced Opioid Tendency (POT), which are useful for the individualized assessment of opioid use for each patient. In particular, BOT refers to the odds of receiving preoperative opioids when the patient does not report pain and POT is the odds ratio of  receiving preoperative opioids for one unit increase in the reported overall body pain. To print the summary of the INNER model architecture used for AOS data run:
 ```
 $ python SummaryModel.py
 ```
-<img align="middle" src="https://github.com/YumingSun/INNER/blob/master/utilities/ArchitecutreOfINNER.png">
+
 
 ## License
 This project is covered under MIT license
