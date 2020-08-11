@@ -43,19 +43,19 @@ Demo
 ```
 $ python train.py PATH_TO_TRAINING_DATA PATH_TO_MODEL
 ```
-It trains the INNER model using training data at `PATH_TO_TRAINING_DATA` and saves the trained model at `PATH_TO_MODEL`. Pre-trained model is `pre_trained_model.h5`.
+It trains the INNER model using training data at `PATH_TO_TRAINING_DATA` and saves the trained model at `PATH_TO_MODEL`. Pre-trained model is `pre_trained_model.h5`. The training process takes about one minute.
 
 * `test.py`: The script used to evaluate the performance of the INNER model. To evaluate the performance run:
 ```
 python test.py PATH_TO_TESTING_DATA PATH_TO_MODEL
 ```
-It evaluate the performance of pre-trained model at `PATH_TO_MODEL` using testing data at `PATH_TO_TESTING_DATA`. It prints out the C statistics, accuaracy, sensitivity, specificity and balance accuracy.
+It evaluate the performance of pre-trained model at `PATH_TO_MODEL` using testing data at `PATH_TO_TESTING_DATA`. It prints out the C statistics, accuaracy, sensitivity, specificity and balance accuracy. The testing process takes few seconds.
 
 *`estimate.py`: The script used to estimate the BOT and POT. To estimate these two metrics run:
 ```
 python estimate.py PATH_TO_ESTIMATE_DATA PATH_TO_MODEL PATH_TO_OUTPUT
 ```
-It estimate the BOT and POT for each subject in the data at `PATH_TO_ESTIMATE_DATA` using pre-trained model at `PATH_TO_MODEL`. It prints out the first five results and save all the results at `PATH_TO_OUTPUT`.
+It estimate the BOT and POT for each subject in the data at `PATH_TO_ESTIMATE_DATA` using pre-trained model at `PATH_TO_MODEL`. It prints out the first five results and save all the results at `PATH_TO_OUTPUT`. The estimation process takes few seconds.
 
 
 License
