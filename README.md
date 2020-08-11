@@ -21,7 +21,7 @@ This project aims to understand the risk of preoperative opioid. A novel Interpr
 Requirements
 ============
 
-The project has been tested on Python 3.7.4 with ```Tensorflow == 2.0.0```, ```Scikit-learn == 0.20.2``` and ```Numpy == 1.17.4```.
+The project has been tested on Python 3.7.4 with `Tensorflow == 2.0.0`, `Scikit-learn == 0.20.2` , `Pandas == 0.24.1` and `Numpy == 1.17.4`.
 
 INNER Model
 ===========
