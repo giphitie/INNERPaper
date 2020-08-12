@@ -50,7 +50,7 @@ python test.py PATH_TO_TESTING_DATA PATH_TO_MODEL
 ```
 It evaluate the performance of pre-trained model at `PATH_TO_MODEL` using testing data at `PATH_TO_TESTING_DATA`. It prints out the C statistics, accuaracy, sensitivity, specificity and balance accuracy. The testing process takes few seconds.
 
-*`estimate.py`: The script used to estimate the BOT and POT. To estimate these two metrics run:
+* `estimate.py`: The script used to estimate the BOT and POT. To estimate these two metrics run:
 ```
 python estimate.py PATH_TO_ESTIMATE_DATA PATH_TO_MODEL PATH_TO_OUTPUT
 ```
