@@ -10,7 +10,6 @@ Table of contents
    * [INNER Model](#inner-model)
    * [Data](#data)
    * [Demo](#demo)
-   * [License](#license)
 <!--tc-->
 
 Overview
@@ -56,9 +55,3 @@ It evaluate the performance of pre-trained model at `PATH_TO_MODEL` using testin
 python estimate.py PATH_TO_ESTIMATE_DATA PATH_TO_MODEL PATH_TO_OUTPUT
 ```
 It estimate the BOT and POT for each subject in the data at `PATH_TO_ESTIMATE_DATA` using pre-trained model at `PATH_TO_MODEL`. It prints out the first five results and save all the results at `PATH_TO_OUTPUT`. The estimation process takes few seconds.
-
-
-License
-=======
-
-This project is covered under MIT license
