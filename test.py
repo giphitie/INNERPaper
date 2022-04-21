@@ -32,6 +32,7 @@ def performance_INNER(testing,model_name):
     return {'C Stat':AUC_lr,'Accuracy':acc_lr,'Sensitivity':sensitivity_lr,
             'Specificity':specificity_lr, 'Balance Accuracy':avg_acclr}
 
+
 if __name__ == "__main__":
     test = np.genfromtxt(sys.argv[1],delimiter=",")
     res = performance_INNER(test,sys.argv[2])
