@@ -1,3 +1,5 @@
+install.packages("rJava")
+library(rJava)
 library(bartMachine)
 library(tidyverse)
 library(caret)
