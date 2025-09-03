@@ -78,8 +78,8 @@ def validation(X,Y, TestSize = 0.2,epo = 60):
             'Model Based Specificity':specificity_lr,'Model Based Balance Accuracy':avg_acclr}
 
 
-X = np.genfromtxt("correctModelSR32_x.csv",delimiter=",",skip_header=1)
-Y = np.genfromtxt("correctModelSR32_y.csv",delimiter=",",skip_header=1)
+X = np.genfromtxt("D:/WashU/PHD/Year 2/Sem 1/Research/Papers/Papers Simulation/INNERPaper/simulation/data/correctModelSR32_x.csv",delimiter=",",skip_header=1)
+Y = np.genfromtxt("D:/WashU/PHD/Year 2/Sem 1/Research/Papers/Papers Simulation/INNERPaper/simulation/data/correctModelSR32_y.csv",delimiter=",",skip_header=1)
 
 
 Times = 50
