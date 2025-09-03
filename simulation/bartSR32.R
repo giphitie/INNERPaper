@@ -1,12 +1,17 @@
-install.packages("rJava")
+#install.packages("purrr")
+
+options(java.parameters = c("-Xms1g", "-Xmx8g", "-XX:+UseG1GC"))
 library(rJava)
+rJava::.jinit()
+rt <- rJava::.jcall("java/lang/Runtime", "Ljava/lang/Runtime;", "getRuntime")
+rJava::.jcall(rt, "J", "maxMemory")/1024^3 
 library(bartMachine)
 library(tidyverse)
 library(caret)
 library(cvAUC)
 
-X = read_csv("correctModelSR32_x.csv")
-Y = read_csv("correctModelSR32_y.csv")
+X = read_csv("D:/WashU/PHD/Year 2/Sem 1/Research/Papers/Papers Simulation/INNERPaper/simulation/data/correctModelSR32_x.csv")
+Y = read_csv("D:/WashU/PHD/Year 2/Sem 1/Research/Papers/Papers Simulation/INNERPaper/simulation/data/correctModelSR32_y.csv")
 
 validation = function(X,Y,TestSize){
   TestID = sample(1:nrow(X),size = floor(nrow(X) *TestSize),replace = F)
@@ -17,7 +22,7 @@ validation = function(X,Y,TestSize){
   Y_train = data.frame(Y_train);Y_test = data.frame(Y_test);
   Y_train$x = factor(Y_train$x);Y_test$x = factor(Y_test$x);
   
-  bart_machine = build_bart_machine(X_train,Y_train$x,num_trees = 80,k = 5)
+  bart_machine = build_bart_machine(X_train,Y_train$x,num_trees = 50,k = 5,mem_cache_for_speed = FALSE)
   #post = mc.pbart(as.matrix(X_train), as.matrix(Y_train), as.matrix(X_test),nskip = 3000,ndpost = 1000,mc.cores=10)
   predProb = 1 - predict(bart_machine, X_test)
   pred = predict(bart_machine, X_test, type = "class")
